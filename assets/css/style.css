@@ -1,5 +1,5 @@
 /*
-@File: g2s Template Styles
+@File: Adma Template Styles
 
 * This file contains the styling for the actual template, this
 is the file you need to edit to change the look of the
@@ -32,7 +32,7 @@ This files table contents are outlined below>>>>>
 ** - Application Area Style
 ** - Blog Area Style
 ** - Admission Area Style
-** - g2s About Area Style
+** - Adma About Area Style
 ** - Video Area Style
 ** - Student Area Style
 ** - Counter Area Style
@@ -297,14 +297,14 @@ Top Header Area Style
 }
 .top-header-list ul li a {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.56);
+  color: #fff;
 }
 .top-header-list ul li a i {
   top: 2px;
   font-size: 16px;
   margin-right: 7px;
   position: relative;
-  color: var(--primaryColor);
+  color: #fff;
 }
 .top-header-list ul li a:hover {
   color: var(--primaryColor);
@@ -375,8 +375,8 @@ Top Header Area Style
   text-align: center;
   border-radius: 100%;
   display: inline-block;
-  color: rgb(143, 156, 172);
-  background-color: rgba(255, 255, 255, 0.08);
+  color: #001e43;
+  background-color: #fff;
 }
 .top-header-social-list ul li .social-link li a i {
   bottom: -2px;
@@ -390,6 +390,10 @@ Top Header Area Style
   margin-right: 0;
 }
 
+img.black-logo {
+    width: 120px;
+}
+
 /*================================================
 Navbar Area Style
 =================================================*/
@@ -398,8 +402,9 @@ Navbar Area Style
   position: relative;
   background-color: var(--whiteColor);
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
-  /* padding-top: 25px;
-  padding-bottom: 25px; */
+  padding-top: 0px;
+  padding-bottom: 0px;
+  --bs-navbar-padding-y:0px;
 }
 .navbar .container-fluid {
   max-width: 1680px;
@@ -417,19 +422,19 @@ Navbar Area Style
   list-style-type: none;
 }
 .navbar .navbar-nav {
-  margin-right: 60px;
+  margin-right: 10%;
 }
 .navbar .navbar-nav .nav-item {
   position: relative;
   margin-left: 22px;
-  margin-right: 22px;
+  margin-right: 40px;
 }
 .navbar .navbar-nav .nav-item .nav-link {
   position: relative;
   color: var(--blackColor);
   transition: var(--transition);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -499,7 +504,7 @@ Navbar Area Style
   opacity: 0;
   z-index: 99;
   border: none;
-  width: 270px;
+  width: 320px;
   margin-top: 0;
   display: block;
   padding: 12px 0;
@@ -670,8 +675,8 @@ Navbar Area Style
   z-index: 999;
   position: sticky;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-  /* padding-top: 25px;
-  padding-bottom: 25px; */
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .navbar.style-2 .others-option .option-item .default-btn:hover {
   color: var(--whiteColor) !important;
@@ -1046,7 +1051,7 @@ Hero Area Style
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../img/bg/bg-1.jpg);
+  background-image: url(../img/banner2.png);
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -1455,7 +1460,6 @@ About Area Style
 }
 .about-content .title h2 {
   font-size: 42px;
-  line-height: 0;
   margin-bottom: 30px;
 }
 .about-content .title h2 img {
@@ -1787,9 +1791,9 @@ Apply Area Style
   margin-right: 50px;
   margin-bottom: 25px;
 }
-.apply-image .image img {
+/* .apply-image .image img {
   border-radius: 100%;
-}
+} */
 .apply-image .user-help {
   top: 150px;
   right: -15px;
@@ -3461,7 +3465,7 @@ Page Banner Area Style
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../img/bg/bg-3.jpg);
+  background-image: url(../img/bg.jpg);
 }
 .pages-banner-area .container-fluid {
   max-width: 1480px;
@@ -4520,7 +4524,7 @@ Contact Area CSS
   font-size: 14px;
 }
 .contact-form form .default-btn {
-  width: 100%;
+  width: auto;
   transition: var(--transition);
 }
 .contact-form form .default-btn:hover {
@@ -4848,7 +4852,7 @@ Support Area CSS
 Footer Area Style
 =================================================*/
 .footer-area {
-  background-color: #f6f6f6;
+  background-color: var(--blackColor);
 }
 
 .single-footer-widget {
@@ -4857,13 +4861,16 @@ Footer Area Style
 .single-footer-widget h3 {
   font-size: 18px;
   margin-bottom: 25px;
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-weight: 500;
 }
 .single-footer-widget ul li {
   margin-bottom: 20px;
 }
 .single-footer-widget ul li a {
   text-decoration: none;
-  color: var(--paragraphColor);
+  color: #fff;
 }
 .single-footer-widget ul li a:hover {
   color: var(--primaryColor);
@@ -4876,10 +4883,14 @@ Footer Area Style
 }
 .single-footer-widget.about p {
   margin-bottom: 35px;
+  color: #fff;
 }
 .single-footer-widget.about h6 {
   font-size: 18px;
   margin-bottom: 20px;
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-weight: 500;
 }
 .single-footer-widget.about .social-link li {
   margin-right: 10px;
@@ -4914,14 +4925,14 @@ Footer Area Style
   top: 1px;
   font-size: 16px;
   position: absolute;
-  color: var(--primaryColor);
+  color: #fff;
 }
 .single-footer-widget.contact ul li i {
   left: 0;
   top: 3px;
   font-size: 16px;
   position: absolute;
-  color: var(--primaryColor);
+  color: #fff;
 }
 .single-footer-widget.quick {
   margin-left: 50px;
@@ -4937,22 +4948,24 @@ Footer Area Style
 }
 
 .copyright-area {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 25px;
+  background-color: var(--blackColor);
+  border-top: 1px solid #fff;
 }
 
-/* .copyright-logo {
+.copyright-logo {
   margin-bottom: 25px;
 }
 
 .copyright-title {
   margin-bottom: 25px;
-} */
+}
 .copyright-title p strong {
-  color: var(--primaryColor);
+    color: #fff;
+    margin: 0 4px;
 }
 
-/* .copyright-list {
+.copyright-list {
   margin-bottom: 25px;
 }
 .copyright-list ul li {
@@ -4966,8 +4979,8 @@ Footer Area Style
 }
 .copyright-list ul li:last-child {
   margin-right: 0;
-} */
-.pt-50 {padding-top: 50px;}
+}
+
 /*================================================
 Back to Top Style
 =================================================*/
@@ -5039,3 +5052,10 @@ Back to Top Style
   visibility: visible;
   transform: translateY(-95%);
 }/*# sourceMappingURL=style.css.map */
+
+
+.pt-50{padding-top: 50px;}
+.single-footer-widget p {
+    color: #fff;
+}
+.copyright-title p{color: #fff;}
